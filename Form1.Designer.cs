@@ -34,6 +34,9 @@ namespace WindowsFormsApp3
             this.btnSave = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.listUndo = new System.Windows.Forms.ListBox();
+            this.btnUndo = new System.Windows.Forms.Button();
+            this.btnRedo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbText
@@ -43,6 +46,7 @@ namespace WindowsFormsApp3
             this.rtbText.Size = new System.Drawing.Size(569, 334);
             this.rtbText.TabIndex = 0;
             this.rtbText.Text = "";
+            this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
             // 
             // btnOpen
             // 
@@ -68,11 +72,42 @@ namespace WindowsFormsApp3
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // listUndo
+            // 
+            this.listUndo.FormattingEnabled = true;
+            this.listUndo.Location = new System.Drawing.Point(633, 77);
+            this.listUndo.Name = "listUndo";
+            this.listUndo.Size = new System.Drawing.Size(130, 329);
+            this.listUndo.TabIndex = 3;
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.Location = new System.Drawing.Point(323, 12);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(110, 47);
+            this.btnUndo.TabIndex = 4;
+            this.btnUndo.Text = "上一步";
+            this.btnUndo.UseVisualStyleBackColor = true;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.Location = new System.Drawing.Point(439, 12);
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Size = new System.Drawing.Size(110, 47);
+            this.btnRedo.TabIndex = 5;
+            this.btnRedo.Text = "下一步";
+            this.btnRedo.UseVisualStyleBackColor = true;
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRedo);
+            this.Controls.Add(this.btnUndo);
+            this.Controls.Add(this.listUndo);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.rtbText);
@@ -89,6 +124,9 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ListBox listUndo;
+        private System.Windows.Forms.Button btnUndo;
+        private System.Windows.Forms.Button btnRedo;
     }
 }
 
