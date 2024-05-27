@@ -53,9 +53,9 @@ namespace WindowsFormsApp3
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(609, 50);
+            this.btnOpen.Location = new System.Drawing.Point(609, 46);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(150, 26);
+            this.btnOpen.Size = new System.Drawing.Size(150, 30);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "開啟檔案";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@ namespace WindowsFormsApp3
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(609, 82);
+            this.btnSave.Location = new System.Drawing.Point(609, 78);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 26);
+            this.btnSave.Size = new System.Drawing.Size(150, 30);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "儲存檔案";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@ namespace WindowsFormsApp3
             // 
             // btnUndo
             // 
-            this.btnUndo.Location = new System.Drawing.Point(609, 114);
+            this.btnUndo.Location = new System.Drawing.Point(609, 110);
             this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(150, 26);
+            this.btnUndo.Size = new System.Drawing.Size(150, 30);
             this.btnUndo.TabIndex = 4;
             this.btnUndo.Text = "上一步";
             this.btnUndo.UseVisualStyleBackColor = true;
@@ -95,9 +95,9 @@ namespace WindowsFormsApp3
             // 
             // btnRedo
             // 
-            this.btnRedo.Location = new System.Drawing.Point(609, 146);
+            this.btnRedo.Location = new System.Drawing.Point(609, 142);
             this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(150, 26);
+            this.btnRedo.Size = new System.Drawing.Size(150, 30);
             this.btnRedo.TabIndex = 5;
             this.btnRedo.Text = "下一步";
             this.btnRedo.UseVisualStyleBackColor = true;
